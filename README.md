@@ -9,9 +9,9 @@ The project currently targets two flows:
 
 ## How it works
 
-`[reddit.ts](./src/reddit.ts)` is the entry point. It runs on an interval, checks the current URL, and routes to either the comment-page tweaks or the timeline tweaks.
+[`reddit.ts`](./src/reddit.ts) is the entry point. It runs on an interval, checks the current URL, and routes to either the comment-page tweaks or the timeline tweaks.
 
-Both feature paths operate on the same `RedditThing` abstraction from `[reddit-things.ts](./src/reddit-things.ts)`. Instead of scattering raw DOM queries across every tweak, the code wraps each Reddit post container in a small class that exposes useful post data such as:
+Both feature paths operate on the same `RedditThing` abstraction from [`reddit-things.ts`](./src/reddit-things.ts). Instead of scattering raw DOM queries across every tweak, the code wraps each Reddit post container in a small class that exposes useful post data such as:
 
 - author
 - subreddit
